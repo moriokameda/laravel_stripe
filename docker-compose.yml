@@ -17,6 +17,7 @@ services:
       - DB_DATABASE=${DB_NAME:-laravel_local}
       - DB_USERNAME=${DB_USER:-phper}
       - DB_PASSWORD=${DB_PASS:-secret}
+      - DB_ROOT_PASSWORD=secret
 
   web:
     build:
